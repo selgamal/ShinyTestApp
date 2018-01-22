@@ -1,0 +1,1324 @@
+
+/* General page styles */
+
+
+
+body > div.wrapper {
+  display:none;
+}
+
+
+body {
+    padding-top: 5em;
+    min-width: 500px;
+    overflow-x: auto;
+}
+body > div.container-fluid > div.tab-content {
+    padding-left: 19em;
+}
+
+#showsidebar {
+  background-color: #f4f4f4; 
+  margin-top: 19px;
+  float: left;
+  width: 20px;
+  margin-left: 5px;
+  text-align:center;
+  border-radius:2px;
+  position:fixed;
+  cursor:pointer;
+  color: rgba(128, 128, 128, 0.63);
+}
+
+#showsidebar:hover {
+  background-color: #e7e7e7;
+}
+
+#hidesidebar {
+  margin-left: 95%;
+  border-radius:2px;
+  width: 20px;
+  text-align:center;
+  margin-top: -10px;
+  color: rgba(128, 128, 128, 0.63);
+  cursor:pointer;
+}
+
+#main_tabs > li:nth-child(5) > a {
+      padding-top: 11px;
+      padding-bottom: 11px;
+}
+
+#main_tabs > li:nth-child(5) > a > i {
+  color:#952828 !important
+}
+
+
+#hidesidebar:hover {
+  background-color: #e7e7e7;
+}
+
+
+@media screen and (max-width: 960px) {
+    #sidebarpan, #showsidebar {
+        display: none !important;
+    }
+    body > div.container-fluid > div.tab-content {
+        padding-left: 0 !important;
+    }
+}
+
+#sidebarpan > div.form-group.shiny-input-container > div > div > div.selectize-input {
+  min-height: 34px;
+    max-height: 157px;
+    overflow: auto;
+}
+
+
+div[id^='navbar-collapse-'] {
+  float:left;
+}
+
+.navbar-nav {
+  margin-left:19em;
+}
+
+/* Table Modal */ 
+
+#detailstable {
+  overflow-x: auto;
+}
+
+#detailstable > div {
+  width: 95%;
+  min-width: 978px;
+}
+
+#detailstable > div > div {
+  border-radius:3px;
+}
+
+/* No Data Alerts */
+#alert1 {
+  float:right;
+  cursor:pointer;
+  padding-top:15px;
+  visibility:hidden;
+}
+
+#alertdropdown {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 250px;
+    margin-right: 0;
+    margin-left: -235px;
+    background-color: white;
+}
+
+#dropdownlist {
+    color: #8a6d3b;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.fa-warning {
+  color:orange;
+}
+
+#timenow {
+  float: right;
+  font-size: 11px;
+  margin-top: 18px;
+}
+
+.redO {
+  color:red;
+}
+
+.greenO {
+  color:lightgreen;
+}
+
+
+#vbx_tkrgnr, #vbx_tkrlosr {
+  width:100%;
+}
+
+#vbx_tkrlosr.shiny-output-error, #vbx_tkrgnr.shiny-output-error {
+  text-align:center;
+}
+
+
+
+.fa-caret-up {
+  color:greenyellow; 
+  margin-right:20px;
+  margin-bottom:35px;
+}
+
+.fa-caret-down {
+  color:#ffb498; 
+  margin-right:20px;
+  margin-bottom:35px;
+}
+
+.small-box h3 {
+  white-space:normal
+  ;word-wrap: break-word
+  
+}
+
+.small-box {
+  overflow-y: hidden;
+  cursor:pointer;
+  border-radius:6px;
+}
+
+
+
+
+@media (max-width: 1117px) {
+
+#timenow, #alert1 {
+  display:none;
+}
+
+}
+
+
+@media (max-width: 767px) {
+.navbar-nav {
+    float: left;
+    margin: 0;
+    padding-top:6px;
+}
+}
+
+body > nav > div > div > span {
+      background-color: #952828 !important;
+      color:white !important;
+      /*background-color: #e7e7e7 !important;*/
+      width: 14em;
+      position:absolute;
+      }
+      
+body > nav > div > div.navbar-header > button {
+  z-index:1;
+}
+
+#shiny-notification-panel {
+  top:50%; 
+  left:50%; 
+  bottom:50%;
+}
+
+#sidebarpan > form > div.form-group.shiny-input-container > label {
+  font-weight:normal;
+}
+
+/* popup modal plot */
+
+#dyload { 
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  z-index: -1;
+  color: #dadadb;
+}
+
+#dytenyears {
+  background: white;
+  
+}
+
+#dytenyears.recalculating {
+  z-index: -2;
+  position: relative;
+  
+}  
+#dyintra {
+  background: white;
+  
+}
+#dyintra.recalculating {
+  z-index: -2;
+  position: relative;
+  
+}
+
+#dyintra, #dytenyears {
+  display:flex;
+}
+
+#plotmodal > div > div {
+  border-radius: 2px;
+}
+
+#dymodaltilecontents > div {
+  float:left;
+  
+}
+
+#plotmodal > div {
+  width: 80%;
+  height:60%;
+}
+
+#plotmodal > div > div > div.modal-header {
+  height:65px;
+}
+
+#plotmodal > div > div > div.modal-footer {
+  display:none;
+}
+
+
+/* Ticker Details Tab Styles */
+
+#slct_Tkr_fs {
+  background-color:white;
+}
+
+#slct_Tkr_fs > li.active > #lnk {
+  background-color:#952828;
+  color:white;
+  font-weight: bold;
+  border-radius: 8px;
+  
+}
+
+#div_price_fs > li.active > #price_fs {
+  background-color:#952828;
+  color:white;
+  font-weight: bold;
+  border-radius: 8px;
+  
+}
+
+
+#slct_Tkr_fs > li > a {
+  padding: 2px 13px;
+}
+
+#BS, #IS, #CF {
+  font-size:80%;
+  
+}
+
+
+
+#slctrs > div {
+  margin-bottom: 0;
+  height: 33px;
+}
+
+#slctrs > div:nth-child(1) {
+  float:left;
+  
+}
+#slctrs > div:nth-child(2) {
+  float:left;
+
+}
+
+#BS > table > thead > tr > th:not(:first-child),
+#IS > table > thead > tr > th:not(:first-child),
+#CF > table > thead > tr > th:not(:first-child)  {
+  text-align:right !important
+}
+
+#BS > table > tbody > tr > td:nth-child(n+2),
+#CF > table > tbody > tr > td:nth-child(n+2),
+#IS > table > tbody > tr > td:nth-child(n+2){
+  text-align:right;
+  width:104px;
+  
+}
+
+#BS > table > tbody > tr:nth-child(1) > td:nth-child(1),
+#CF > table > tbody > tr:nth-child(1) > td:nth-child(1),
+#IS > table > tbody > tr:nth-child(1) > td:nth-child(1) {
+  width: 210px;
+  
+}
+
+
+#ratio {
+  margin-bottom:0px;
+  padding-bottom: 4px; 
+  font-size:90%;
+  /*background: rgb(240, 240, 240);*/
+  
+}
+
+#tkr_fs_ratios .shiny-output-error-validation {
+  height:400px;
+}
+
+#BS > table > tbody > tr > td,
+#CF > table > tbody > tr > td,
+#IS > table > tbody > tr > td {
+  border-top:none;
+  
+}
+
+#BS > table > tbody > tr:nth-child(3),
+#BS > table > tbody > tr:nth-child(8),
+#IS > table > tbody > tr:nth-child(14),
+#CF > table > tbody > tr:nth-child(5) {
+  border-top: 2px solid #ddd;
+  border-bottom: 3px solid #ddd;
+  font-weight: bold;
+  
+}
+
+#BS > table > tbody > tr:nth-child(6),
+#IS > table > tbody > tr:nth-child(3),
+#IS > table > tbody > tr:nth-child(5),
+#IS > table > tbody > tr:nth-child(7),
+#IS > table > tbody > tr:nth-child(9),
+#IS > table > tbody > tr:nth-child(12) {
+  border-top: 2px solid #ddd;
+  font-weight: bold;
+  
+}
+
+
+#slct_Tkr_fs.shiny-output-error-validation {
+  white-space:inherit;
+
+}
+
+#tkr_stats > .marq {
+    float:left;
+    background: #f6f6f6;
+    padding: 4px;
+    border-radius: 5px;
+    margin:2px;
+    font-size:80%;
+}
+
+#tkr_price_history > div.form-group.shiny-input-container > div,
+#tkr_price_history > div.form-group.shiny-input-container {
+  margin-bottom:0px;
+  
+}
+
+
+#BBnPeriods, #BBsd, #smafast, #smaslow, #MACDFastPeroids,
+#MACDSlowPeroids, #MACDSignalPeriods, #RSIperiods {
+  height:24px;
+}
+
+#bbinput1 > div:nth-child(2) > div, #bbinput2 > div:nth-child(2) > div,
+#SMAinput1 > div:nth-child(2) > div, #SMAinput2 > div:nth-child(2) > div,
+#macdinput1 > div:nth-child(2) > div, #MACDinput2 > div:nth-child(2) > div,
+#MACDinput3 > div:nth-child(2) > div, #RSIinput1 > div:nth-child(2) > div {
+  margin-bottom: 5px;
+  
+}    
+
+#bbinput2 > div:nth-child(2), #bbinput1 > div:nth-child(2),
+#SMAinput1 > div:nth-child(2), #SMAinput2 > div:nth-child(2), 
+#macdinput1 > div:nth-child(2), #MACDinput2 > div:nth-child(2),
+#MACDinput3 > div:nth-child(2), #RSIinput1 > div:nth-child(2) {
+  width:74px;
+}
+
+/***** *******/
+
+
+.shiny-flow-layout>div {
+  width:auto;
+}
+
+#Chart1Opts > div {
+  width:312px;
+}
+
+#Chart2Opts > div {
+  width:265px;
+}
+
+#Chart1Opts, #Chart2Opts {
+  background:none;
+}
+
+#tkrsload {
+  z-index: -1;
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 2px;
+}
+
+#CoNameload {
+  z-index: -1;
+  position: absolute;
+  margin-top: 13px;
+  margin-left: 2px;
+  font-size: 15px;
+}
+
+/*#CompanyName.recalculating {
+  z-index:-5;
+  position:relative;
+}*/
+
+#CompanyName.shiny-output-error {
+  background-color:white;
+}
+
+#CompanyName.shiny-bound-output {
+    background-color:white;
+
+}
+
+
+
+#CandlstickTable > table > tbody > tr > td:nth-child(3) {
+  text-align:right;
+}
+
+#CandlstickTable > table {
+  margin-bottom:0px;
+}
+
+
+#perfmetricstbl > table,
+#tkrDetails_VaR > table,
+#tkrDetails_ES > table  {
+  margin-bottom:3px;
+}
+
+#CandlstickTable > table > thead > tr > th:nth-child(3) {
+  text-align:right !important;
+}
+
+#CandlstickTable {
+  margin-top:3px;
+}
+
+
+#perfmetrics > div  {
+  height:20px;
+  /*padding-left: 60px;*/
+}
+
+#perfmetrics > div > div:nth-child(1),
+#perfmetrics > div > div:nth-child(2)
+{
+  padding-right:0;
+}
+
+
+
+#perfmetrics > div > div:nth-child(1) > div > div:nth-child(3) {
+  padding-right:7px;
+}
+
+
+#perfmetrics > div > div:nth-child(1) > div > div:nth-child(2) > div {
+  margin-bottom: 0px;
+}
+
+#perfmetrics {
+  background-color:#F0F0F0;
+  height: 20px;
+}
+
+
+#PerformanceChart {
+  margin-top:3px;
+}
+
+#returnmonths {
+  height:20px;
+}
+
+#perfmetrics > div > div:nth-child(2) > div > div:nth-child(2) > div > div > div > div.selectize-input {
+    width: 98px;
+    padding: 0px 0px 0px 6px;
+    min-height: 20px;
+    border-radius: 1px;
+    height: 20px;
+    width: 115px;
+}
+
+#perfmetrics > div > div:nth-child(2) {
+  height:20px;
+}
+
+
+#perfmetrics > div > div:nth-child(1) > div > div:nth-child(2),
+#perfmetrics > div > div:nth-child(1) > div > div:nth-child(1),
+#perfmetrics > div > div:nth-child(2) > div > div:nth-child(1) {
+  padding-right:4px;
+}
+
+
+#perfmetrics > div > div:nth-child(1) > div > div:nth-child(1),
+#perfmetrics > div > div:nth-child(1) > div > div:nth-child(3),
+#perfmetrics > div > div:nth-child(2) > div > div:nth-child(1) {
+  padding-top:2px;
+}
+
+#perfmetrics > div > div:nth-child(2) > div {
+  height:20px;
+}
+
+#candlestick_qm_daterange,
+#comapreTkrs_pa_daterange{
+  margin-bottom: auto;
+  float: right;
+  display:none;
+}
+
+/*
+#slct_chartpkg {
+  display:none;
+}*/
+
+#calculatedsharpe {
+ margin-top: 3px; 
+}
+
+#sharperatio > div > div:nth-child(2) > div {
+  margin-bottom:0px;
+}
+
+#sharperatio > div > div:nth-child(1),
+#sharperatio > div > div:nth-child(3) {
+  padding-right: 1px;
+  margin-top: 3px;
+}
+
+#sharperatio > div > div:nth-child(4) {
+  padding-right:0px;
+}
+
+#sharperatio > div > div:nth-child(2) {
+  padding-right:2px;
+}
+
+#sharperatio > div > div:nth-child(4) > div {
+  margin-bottom: 1px;
+}
+
+#sharperatio > h6 {
+  margin-bottom:0;
+}
+
+/*
+#btn_updateCompareChart {
+  margin-top: 33px !important;
+}*/
+
+
+#compchartslctr > div:nth-child(1) > div, 
+#compchartslctr > div:nth-child(1) > div > div > div,
+#port_sectionThree_compchartslctrs > div:nth-child(1) > div,
+#port_sectionThree_compchartslctrs > div:nth-child(1) > div > div > div,
+#port_sectionThree_daterange,
+#port_sectionThree_compchartslctrs > div:nth-child(2) > div:nth-child(1) > div > div > div:nth-child(2) > div,
+#port_sectionThree_compchartslctrs > div:nth-child(2) > div:nth-child(1) > div > div > div:nth-child(3) > div,
+#port_sectionThree_compchartslctrs > div:nth-child(2) > div:nth-child(1) > div > div > div:nth-child(3) > div > div > div,
+#port_sectionThree_compchartslctrs > div:nth-child(2) > div:nth-child(1) > div > div > div:nth-child(2) > div > div > div  {
+  margin-bottom:0;
+}
+
+#port_sectionThree_compchartslctrs > div:nth-child(2) > div:nth-child(2) > div {
+  margin-top:3px;
+}
+
+#compchartslctr > div:nth-child(1) > div > div > div > div.selectize-input,
+#port_sectionThree_compchartslctrs > div:nth-child(1) > div > div > div > div.selectize-input {
+    min-height: 66px;
+    max-height: 66px;
+    overflow-y: auto;
+}
+
+
+#compchartslctr > div:nth-child(2) > div:nth-child(1) > div > div > div:nth-child(1) > div > div > div > div.selectize-input,
+#compchartslctr > div:nth-child(2) > div:nth-child(1) > div > div > div:nth-child(2) > div > div > div > div.selectize-input,
+#port_sectionThree_compchartslctrs > div:nth-child(2) > div:nth-child(1) > div > div > div:nth-child(2) > div > div > div > div.selectize-input,
+#port_sectionThree_compchartslctrs > div:nth-child(2) > div:nth-child(1) > div > div > div:nth-child(3) > div > div > div > div.selectize-input,
+#port_SectionThree_ChartsRowTwoColTwo_relativePerf_subtitle > div > div:nth-child(2) > div > div > div > div.selectize-input {
+  padding: 0px 0px 0px 6px;
+  min-height: 25px;
+  height: 25px;
+}
+
+#port_sectionThree_daterange > div > input:nth-child(3) {
+  height: 26px;
+  border-radius: 0 4px 4px 0
+}
+
+#port_sectionThree_daterange > div > input:nth-child(1) {
+  height: 26px;
+  border-radius: 4px 0 0 4px;
+}
+
+#port_sectionThree_daterange > div > span {
+  font-size: 11px;
+}
+
+#port_sectionThree_daterange {
+  margin-top:0;
+}
+
+
+
+#compchartslctr > div:nth-child(2) > div:nth-child(1) > div > div {
+  margin-bottom:0px;
+}
+
+#compchartslctr > div:nth-child(2) > div:nth-child(1) > div {
+  height: 50px;
+}
+
+#dfcomptbl > table > thead > tr > th:nth-child(1) {
+  text-align: left !important;
+}
+
+#port_metrics_tbl,
+#port_sectionThree_metrics_tbl {
+  background-color:white;
+}
+
+#port_metrics_tbl > div > table,
+#port_metrics_tbl > div > table > thead > tr > th,
+#port_sectionThree_metrics_tbl > div > table,
+#port_sectionThree_metrics_tbl > div > table > thead > tr > th {
+  border:none;
+}
+
+#port_metrics_tbl > div > table > tbody > .odd,
+#port_sectionThree_metrics_tbl > div > table > tbody > .odd {
+  background-color:#F0F0F0
+}
+
+/*
+#play-controls {
+  background-color: #F0F0F0;
+  max-width: 100% !important;
+}
+*/
+
+#SpltHistory, #DivHistory {
+  height:114px;
+  width:210px;
+  margin-left: 15px;
+ }
+ 
+ 
+#slct_YCdates1 > label, #slct_YCdates2 > label, #slct_YCdates3 > label {
+  display:none;
+}
+
+#slct_YCdates1 > input, #slct_YCdates2 > input, #slct_YCdates3 > input {
+  height:25px;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight:600;
+}
+
+#slct_YCdates1 , #slct_YCdates2, #slct_YCdates3 {
+  margin-bottom:6px
+}
+
+#YC_Chart_Container > div.form-group.shiny-input-container > label,
+#YC_Chart_Container > div.form-group.shiny-input-container > div > div {
+  padding-left:5px;
+  font-weight:normal;
+}
+
+#YC_Chart_Container > div.form-group.shiny-input-container > div > div > div.selectize-input {
+   background-color: rgba(255, 255, 255, 0.2);
+  font-weight:600;
+}
+
+#slct_YCterms > div {
+  padding-left:6px;
+}
+
+.highcharts-credits {
+  fill:blue !important;
+  
+}
+
+
+
+#port_SectionTwo_pefromanceSelections1 > div > div > div:nth-child(4) > div > div > div > div.selectize-input,
+#port_SectionTwo_perf_slct_dateRng > div > input:nth-child(1),
+#port_SectionTwo_perf_slct_dateRng > div > span,
+#port_SectionTwo_perf_slct_dateRng > div > input:nth-child(3),
+#port_SectionTwo_pefromanceSelections1 > div > div > div:nth-child(6) > div > div > div > div.selectize-input,
+#port_SectionTwo_perf_slct_Rf,
+#port_SectionTwo_perf_slct_ConfLvl,
+/**/
+#pefromanceSelections1 > div > div > div:nth-child(4) > div > div > div > div.selectize-input,
+#priceHistory_perf_slct_dateRng > div > input:nth-child(1),
+#priceHistory_perf_slct_dateRng > div > span,
+#priceHistory_perf_slct_dateRng > div > input:nth-child(3),
+#pefromanceSelections1 > div > div > div:nth-child(6) > div > div > div > div.selectize-input,
+#priceHistory_perf_slct_Rf,
+#priceHistory_perf_slct_ConfLvl{
+    min-height:24px;
+    height: 22px;
+    border-radius: 0px;
+    padding: 0 0 0 5px;
+}
+
+#port_SectionTwo_perf_slct_freq_title,
+#port_SectionTwo_perf_slct_dateRng_title,
+#port_SectionTwo_perf_slct_bnchmk_title,
+#port_SectionTwo_perf_slct_Rf_title,
+#port_SectionTwo_perf_slct_ConfLvl_title,
+/**/
+#priceHistory_perf_slct_freq_title,
+#priceHistory_perf_slct_dateRng_title,
+#priceHistory_perf_slct_bnchmk_title,
+#priceHistory_perf_slct_Rf_title,
+#priceHistory_perf_slct_ConfLvl_title {
+  display: block;
+    margin-top: 4px;
+}
+
+
+
+#port_SectionTwo_pefromanceSelections1 > div > div > div:nth-child(4) > div > div > div > div.selectize-input:after,
+#port_SectionTwo_pefromanceSelections1 > div > div > div:nth-child(6) > div > div > div > div.selectize-input:after,
+/**/
+#pefromanceSelections1 > div > div > div:nth-child(4) > div > div > div > div.selectize-input:after,
+#pefromanceSelections1 > div > div > div:nth-child(6) > div > div > div > div.selectize-input:after{
+  right:4px;
+}
+
+
+#port_SectionTwo_pefromanceSelections1 > div > div > div:nth-child(1),
+#port_SectionTwo_pefromanceSelections1 > div > div > div:nth-child(3),
+#port_SectionTwo_pefromanceSelections1 > div > div > div:nth-child(5),
+#port_SectionTwo_pefromanceSelections1 > div > div > div:nth-child(7),
+#port_SectionTwo_pefromanceSelections1 > div > div > div:nth-child(9),
+/**/
+#pefromanceSelections1 > div > div > div:nth-child(1),
+#pefromanceSelections1 > div > div > div:nth-child(3),
+#pefromanceSelections1 > div > div > div:nth-child(5),
+#pefromanceSelections1 > div > div > div:nth-child(7),
+#pefromanceSelections1 > div > div > div:nth-child(9){
+  padding-right:2px;
+}
+
+
+
+#port_SectionTwo_perf_slct_Rf,
+#port_SectionTwo_perf_slct_ConfLvl,
+/**/
+#priceHistory_perf_slct_Rf,
+#priceHistory_perf_slct_ConfLvl {
+  font-size:11px;
+}
+
+
+#port_SectionTwo_perf_slct_dateRng,
+#port_SectionTwo_pefromanceSelections1 > div > div > div:nth-child(4) > div,
+#port_SectionTwo_pefromanceSelections1 > div > div > div:nth-child(6) > div,
+#port_SectionTwo_pefromanceSelections1 > div > div > div:nth-child(8) > div,
+#port_SectionTwo_pefromanceSelections1 > div > div > div:nth-child(10) > div,
+#port_SectionTwo_pefromanceSelections1 > div > div > div:nth-child(4) > div > div > div,
+#port_SectionTwo_pefromanceSelections1 > div > div > div:nth-child(6) > div > div > div,
+/**/
+#priceHistory_perf_slct_dateRng,
+#pefromanceSelections1 > div > div > div:nth-child(4) > div,
+#pefromanceSelections1 > div > div > div:nth-child(6) > div,
+#pefromanceSelections1 > div > div > div:nth-child(8) > div,
+#pefromanceSelections1 > div > div > div:nth-child(10) > div,
+#pefromanceSelections1 > div > div > div:nth-child(4) > div > div > div,
+#pefromanceSelections1 > div > div > div:nth-child(6) > div > div > div {
+  margin-bottom:0px
+}
+
+.slider {
+  overflow: hidden;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  -moz-transition: max-height 0.5s ease-in-out;
+  -o-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+}
+
+#calculatedsharpetbl > table {
+   margin-bottom:0px;
+}
+
+#tkrReturnDistributionChart, #tkrReturnBoxplot, #port_SectionTwo_ReturnBoxplot {
+  margin-top:3px;
+}
+
+
+#perfmetricstbl > table > thead > tr > * {
+  text-align: right !important
+  
+}
+
+#calculatedsharpetbl > table > tbody > tr > td:nth-child(3),
+#tkrDetails_VaR > table > tbody > tr > td:nth-child(3),
+#tkrDetails_ES > table > tbody > tr > td:nth-child(3),
+#perfmetricstbl > table > tbody > tr > td:nth-child(3) {
+  width:95px;
+}
+
+#calculatedsharpetbl > table > tbody > tr > td:nth-child(2),
+#tkrDetails_VaR > table > tbody > tr > td:nth-child(2),
+#tkrDetails_ES > table > tbody > tr > td:nth-child(2),
+#perfmetricstbl > table > tbody > tr > td:nth-child(2) {
+  width:95px;
+}
+
+#tkrDetails_valutionRatios_tbl {
+  font-size:11px;
+}
+
+#tkrDetails_valutionRatios_tbl > table > thead > tr > th:not(:first-child) {
+  text-align:right !important
+
+}
+
+#tkrDetails_valutionRatios_tbl > table > thead > tr > th:nth-child(1),
+#port_metrics_tbl > div > div > div.dataTables_scrollHead > div > table > thead > tr > th:nth-child(1),
+#port_sectionThree_metrics_tbl > div > div > div.dataTables_scrollHead > div > table > thead > tr > th:nth-child(1) {
+  text-align:left !important;
+}
+
+#tkrDetails_valutionRatios_tbl > table > tbody > tr > td:not(:first-child) {
+  text-align:right !important
+  
+}
+
+#tkrDetails_valutionRatios_tbl > table {
+  margin-bottom:3px
+}
+
+.fstitles > div:nth-child(1) {
+  padding-right:0px
+}
+
+
+#slct_YCterms {
+  font-size:11px;
+  
+}
+
+#MonthlyYC > div > div > div.dataTables_scrollHead > div > table > thead > tr > th,
+#MonthlyYC > div > div > div.dataTables_scrollFoot > div > table,
+#MonthlyYC > div > div > div.dataTables_scrollBody,
+#port_metrics_tbl > div > div > div.dataTables_scrollHead > div > table > thead > tr > th,
+#port_metrics_tbl > div > div > div.dataTables_scrollFoot > div > table,
+#port_metrics_tbl > div > div > div.dataTables_scrollBody,
+#port_sectionThree_metrics_tbl > div > div > div.dataTables_scrollHead > div > table > thead > tr > th,
+#port_sectionThree_metrics_tbl > div > div > div.dataTables_scrollFoot > div > table,
+#port_sectionThree_metrics_tbl > div > div > div.dataTables_scrollBody{
+  border:none;
+}
+
+
+#candlestickmain_qm {
+  background-color:#F0F0F0;
+  border-radius:6px;
+}
+
+#candlestickmain_hc_container > .shiny-output-error-validation,
+#candlestickmain_qm_container > .shiny-output-error-validation {
+  font-size:x-large;
+  padding-left:10px;
+  padding-top: 8px
+}
+
+
+#YC_Chart_Container, 
+#candlestickmain_qm_container, 
+#candlestickmain_hc_container,
+#compareTkrsChart_hc,
+#div_comapreTkrs_pa {
+  border-radius:6px;
+}
+
+#hc_yc, 
+#compareTkrs_pa_lgnd,
+#hc_YieldCurveTerms > div.highcharts-container,
+#PerformanceChartLegend > img,
+#comapreTkrs_pa > img {
+  border-radius:0 0 6px 6px;
+}
+
+#slctrs > div > div > div > div.selectize-input {
+  min-height: 10px;
+  height: 25px;
+  margin-top: 6px;
+  padding: 0px 0px 0px 6px;
+  width: 75px;
+  background: #F0F0F0;
+}
+
+#slctrs > div > div > div > div.selectize-input:after {
+  right: 5px;
+}
+
+
+#port_sectionOne_rowTwo {
+  margin-top: 3px;
+}
+
+#port_sectionOne_rowTwo > div:nth-child(1) {
+  padding-right: 2px;
+}
+
+#port_sectionOne_rowTwo > div:nth-child(2) {
+  padding-left:2px;
+}
+
+#port_metrics_tbl > div > div > div.dataTables_scrollBody {
+  max-height:359px;
+  height:auto;
+}
+
+#port_sectionThree_metrics_tbl > div > div > div.dataTables_scrollBody {
+  max-height:359px;
+  height:auto;
+}
+
+
+body > div.modal-backdrop.fade.in {
+  opacity:0.25
+}
+
+
+#PortOptim_Slctrs > div:nth-child(3) > div:nth-child(3) > div,
+#PortOptim_Slctrs > div:nth-child(3) > div:nth-child(2) > div,
+#PortOptim_Slctrs > div:nth-child(3) > div:nth-child(1) > div,
+#port_sectionTwo_Optim_daterange,
+#PortOptim_Slctrs > div:nth-child(2) > div,
+#PortOptim_Slctrs > div:nth-child(3) > div:nth-child(1) > div > div > div:nth-child(2) > div,
+#PortOptim_Slctrs > div:nth-child(3) > div:nth-child(1) > div > div > div:nth-child(2) > div > div,
+#PortOptim_Slctrs > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(2) > div,
+#PortOptim_Slctrs > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(4) > div,
+#port_sectionTwo_specs_rowTwoColone > div > div:nth-child(1) > div > div:nth-child(3) > div,
+#port_sectionTwo_specs_rowTwoColone > div.shiny-flow-layout > div:nth-child(2) > div {
+  margin:0;
+}
+
+#PortOptim_Slctrs > div:nth-child(3) > div:nth-child(4),
+#PortOptim_Slctrs > div:nth-child(5) {
+  display:none;
+}
+
+
+#port_sectionTwo_Optim_daterange > div > input:nth-child(1) {
+  border-radius: 5px 0 0 5px;
+}
+
+#port_sectionTwo_Optim_daterange > div > input:nth-child(3){
+  border-radius: 0 5px 5px 0;
+}
+
+
+
+#PortOptim_Slctrs > div:nth-child(2) > div > div > div > div.selectize-input {
+  padding: 3px 0px 0px 8px;
+  min-height: 30px;
+  height: 30px;
+  width:70px
+}
+
+#PortOptim_Slctrs > div:nth-child(2) > div > div > div > div.selectize-input:after {
+  right:6px
+}
+
+
+
+#port_sectionTwo_specs_rowOneColOne > div > div > div > div.selectize-input {
+    max-height: 65px;
+    min-height: 60px;
+    padding-top: 3px;
+    overflow:auto;
+}
+
+
+
+
+#btn_PortSpecfill:hover {
+  background-color:lightgray !important;
+  
+}
+
+
+#PortOptim_Slctrs > div:nth-child(3) > div:nth-child(1) > div > div > div:nth-child(2),
+#PortOptim_Slctrs > div:nth-child(3) > div:nth-child(2) > div,
+#PortOptim_Slctrs > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(2),
+#PortOptim_Slctrs > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(4),
+#PortOptim_Slctrs > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(1),
+#PortOptim_Slctrs > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(3),
+#PortOptim_Slctrs > div:nth-child(1),
+#PortOptim_Slctrs > div:nth-child(2),
+#PortOptim_Slctrs > div:nth-child(3) {
+  padding-right:3px;
+}
+
+
+
+#port_sectionTwo_Optim_UseMinMax {
+  margin-top:0;
+}
+
+
+
+
+#port_sectionTwo_Optim_MinWt,
+#port_sectionTwo_Optim_MaxWt,
+#port_sectionTwo_Optim_slct_Rf {
+      padding: 0 0 0 3px;
+      height: 18px;
+}
+
+
+
+
+
+.tooltip-inner {
+  background: #a9a5a5;
+    color: #ffffff;
+    font-size: 75%;
+    text-align: left;
+    max-width:500px;
+}
+.tooltip-arrow {
+  border-bottom-color:#a9a5a5 !important;
+  
+}
+
+#port_sectionTwo_OptimStat {
+  /*white-space: pre-wrap;
+  word-break: normal;*/
+  height: 100px;
+}
+
+
+#dfcomptbl3,
+#dfcomptbl2 {
+  white-space: pre-wrap;
+  word-break: normal;
+  height: 100px;
+}
+
+#port_sectionTwo_pie_slct {
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+#port_sectionTwo_pie_slct > label {
+  display:none;
+}
+
+#port_sectionTwo_OptimBtn {
+  margin-top:10px;
+}
+
+#port_sectionTwo_specs_rowThreeColOne > div {
+  margin-top:10px;
+}
+
+#port_sectionTwo_specs_rowThreeColOne > div,
+#port_sectionTwo_specs_rowThreeColOne > div > div > div {
+  margin-bottom:1px;
+}
+
+#port_sectionTwo_specs_rowThreeColOne > div > div > div > div.selectize-input {
+  font-size:15px;
+  margin-bottom: 20px;
+  font-weight:700;
+}
+
+#port_sectionTwo_specs_rowThreeColOne > div > div > div > div.selectize-input,
+#port_sectionTwo_specs_saveResults > div.shiny-flow-layout > div:nth-child(2) > div > div > div,
+#port_sectionTwo_specs_saveResults > div.shiny-flow-layout > div:nth-child(2) > div,
+
+#port_sectionTwo_specs_saveResults > div.shiny-flow-layout > div:nth-child(3) > div > div > div,
+#port_sectionTwo_specs_saveResults > div.shiny-flow-layout > div:nth-child(3) > div,
+
+#port_sectionTwo_specs_saveResults > div.shiny-flow-layout > div:nth-child(4) > div > div > div,
+#port_sectionTwo_specs_saveResults > div.shiny-flow-layout > div:nth-child(4) > div {
+  margin-bottom:0;
+  
+}
+
+#port_sectionTwo_specs_saveResults div.selectize-input {
+  padding: 0 0 0 5px;
+  min-height: 10px;
+  height:20px;
+  font-size:13px;
+}
+
+#port_sectionTwo_specs_saveResults > div:nth-child(2) > div > div > div:nth-child(2) > div > div > div > div.selectize-input::after,
+#port_sectionTwo_specs_saveResults > div:nth-child(2) > div > div > div:nth-child(3) > div > div > div > div.selectize-input::after {
+  right:7px;
+}
+
+
+#port_sectionTwo_specs_doAction {
+    height: 20px;
+    padding: 0px 6px 4px 6px;
+    font-size:13px;
+}
+
+#port_sectionTwo_specs_enterName {
+  height:20px;
+  border-radius:4px;
+  padding:2px 2px 2px 6px
+}
+
+#port_sectionTwo_specs_saveResults > div:nth-child(2) > div > div > div:nth-child(1) {
+  padding:2px;
+}
+
+#port_sectionTwo_specs_saveResults > div:nth-child(2) > div > div > div:nth-child(2),
+#port_sectionTwo_specs_saveResults > div:nth-child(2) > div > div > div:nth-child(3),
+#port_sectionTwo_specs_saveResults > div:nth-child(2) > div > div > div:nth-child(4) {
+  padding-right:5px
+}
+
+
+#port_sectionTwo_specs_rowThreeColOne > div > div > div > div.selectize-dropdown > div {
+  font-size:15px;
+}
+
+#port_sectionTwo_NumSaved {
+  color:red;
+  font-weight:bold;
+}
+
+
+#port_SectionTwo_ChartsRowOne .shiny-output-error-validation {
+  font-size:x-large;
+  padding-left:10px;
+  padding-top: 8px;
+}
+
+/*
+#port_SectionTwo_ReturnDistributionChart,
+#port_SectionTwo_ReturnBoxplot,
+#port_SectionTwo_VaRsens {
+  background-color:#F0F0F0;
+}*/
+
+#port_sectionTwo_PerfSum_slct,
+#port_sectionTwo_BoxChart_slct,
+#port_sectionTwo_RetDist_slct,
+#port_sectionTwo_VaRsens_slct {
+  margin:0;
+  text-align:center;
+  font-size:12px;
+}
+
+#port_SectionTwo_perfmetricstbl > table > tbody > tr:nth-child(15) > td:nth-child(1),
+#port_SectionTwo_perfmetricstbl > table > tbody > tr:nth-child(19) > td:nth-child(1),
+#port_SectionTwo_perfmetricstbl > table > tbody > tr:nth-child(23) > td:nth-child(1) {
+  font-weight:600;
+  font-size:12px;
+  padding-left:0;
+  height:54px;
+  vertical-align:bottom;
+}
+
+#port_SectionTwo_perfmetricstbl > table > tbody > tr:nth-child(15) > td:nth-child(n) {
+  border-top:none
+}
+
+#port_SectionTwo_perfmetricstbl > table > tbody > tr:nth-child(15),
+#port_SectionTwo_perfmetricstbl > table > tbody > tr:nth-child(19),
+#port_SectionTwo_perfmetricstbl > table > tbody > tr:nth-child(23),
+#port_SectionTwo_perfmetricstbl > table > tbody > tr:nth-child(17),
+#port_SectionTwo_perfmetricstbl > table > tbody > tr:nth-child(21),
+#port_SectionTwo_perfmetricstbl > table > tbody > tr:nth-child(25) {
+  background-color:transparent;
+}
+
+
+#port_SectionTwo_perfmetricstbl > table > tbody > tr:nth-child(16),
+#port_SectionTwo_perfmetricstbl > table > tbody > tr:nth-child(18),
+#port_SectionTwo_perfmetricstbl > table > tbody > tr:nth-child(20),
+#port_SectionTwo_perfmetricstbl > table > tbody > tr:nth-child(22),
+#port_SectionTwo_perfmetricstbl > table > tbody > tr:nth-child(24),
+#port_SectionTwo_perfmetricstbl > table > tbody > tr:nth-child(26) {
+  background-color:#f9f9f9;
+}
+
+#port_sectionTwo_specs_rowTwo_cont {
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+#port_sectionTwo_OptimResultMsg {
+ height: 79px;
+ margin-bottom: 0;
+}
+
+
+#port_SectionThree_ChartsRowTwoColTwo_relativePerf_subtitle > div > div:nth-child(2) > div,
+#port_SectionThree_ChartsRowTwoColTwo_relativePerf_subtitle > div > div:nth-child(2) > div > div > div {
+  margin-bottom:0;
+  text-align:left;
+}
+
+#port_SectionThree_ChartsRowTwoColTwo_relativePerf_subtitle > div > div:nth-child(2) > div > div > div > div.selectize-input {
+  min-height: 20px;
+    height: 20px;
+    margin-top: 3px;
+}
+
+
+#selectedCompanies {
+  width:90%;
+  height:65px;
+  float:left
+}
+
+#CompaniesList div.dataTables_scrollBody {
+  height:290px !important;
+}
+
+#Companiestable > div > div.modal-content {
+  border-radius:3px;
+}
+
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: lightgrey;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #84BAFF;
+    box-shadow: 0 0 15px #00214B;
+    overflow: hidden;
+    box-sizing: border-box
+}
+
+#footer > div {
+  padding-left: 100%;
+  animation: footer 25s linear infinite;
+}
+
+@keyframes footer {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+#HelpTextContent  p {
+  text-align:justify;
+}
