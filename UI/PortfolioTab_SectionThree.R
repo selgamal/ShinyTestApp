@@ -19,7 +19,7 @@ div(
         selected = NULL,
         multiple = T,
         options = list(
-          placeholder = paste('Up to', SelectizeMaxSelection, 'Ticker Symbols'),
+          placeholder = "Select portfolios to compare",
           maxItems = SelectizeMaxSelection
         ),
         width = "450px"
