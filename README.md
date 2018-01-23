@@ -8,6 +8,9 @@ This app is NOT intended to support any investment analysis or decisions and the
 
 ## **Data**
 The information showing on the app's first tab  "Overview" is downloaded directly from Yahoo and Google finance, and refreshed every 10 seconds. The rest of the analysis is based on the a preloaded datasets containing the daily price history for 95 stocks between Jan 1,2008 to Dec 29, 2017 as mentioned above, the script to create the datasets used in the app is located [here](RDSs/ScriptToCreatePreloadedHistory.R). Also the app can be set to downlaod data directly from yahoo by changing the [Global File](Global/Global.R) and setting variable "UsePreLoadedTkrData" to `FALSE`, and the app will download 10 years price history ending current date,  also max number of stocks handled by the app can be set by variable "SelectizeMaxSelection".
+
+## **Video Instructions**
+Video on how to use the app is available [here](https://youtu.be/xuX83kEm24g)
  
  ## **Installation**
  To make sure all packages required to run the app are installed, run the following script:
