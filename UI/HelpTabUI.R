@@ -26,7 +26,7 @@ tabPanel(title = NULL,
            tags$h4("General"),
            tags$p(
              "The following video shows an overview of the flow of this app, generally users select the ticker symbols they want to see information about in panel on the left side, and then the data for the selected tickers is retrieved and each tab shows some information and analysis of the selected tickers."),
-           HTML('<iframe style = "margin: 0 auto;display: block;" width="560" height="315" src="https://www.youtube.com/embed/bPv47bDX274" frameborder="0" allowfullscreen></iframe>'),
+           HTML('<iframe style = "margin: 0 auto;display: block;" width="560" height="315" src="https://www.youtube.com/embed/xuX83kEm24g" frameborder="0" allowfullscreen></iframe>'),
         tags$h4("Price History Data"),
         tags$p(
                 "

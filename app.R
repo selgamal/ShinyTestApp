@@ -60,7 +60,10 @@ ui <- tagList(
     ,
     alert = source("UI/NavBarAlert.R", local = T)$value
     ,
-    time =  uiOutput("time")
+    time =  div(tags$span(icon("circle-o-notch fa-spin"), "Loading....",
+                          style = "position: absolute;z-index: -1;margin-left: 115px;font-family: monospace;")
+                , uiOutput("time", style = "background-color: #f8f8f8;"), 
+                style = "position: relative;z-index: 0;width: 255px;")
   ),
   # to be able to use items form shiny dashboard, the body display is set as none in styles.css
   dashboardPage(
