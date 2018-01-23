@@ -39,4 +39,6 @@ install.packages(missingPkgs)
  ```r
  shiny::runGitHub("selgamal/shinytestapp")
  ```
+ This app is calculation intensive, it is recommended to run locally as shown above, because it might freeze a little bit if multiple users are using it at the same time on shinyapps.io.
+ 
  All comments, suggestions and ideas are welcomed.
