@@ -20,7 +20,7 @@ appPkgs <-
   c("shiny", "shinyjs", "jsonlite", "rvest", "lubridate", "quantmod", "plyr", "dplyr",
   "sparkline", "shinydashboard", "htmlwidgets", "formattable", "DT", "bubbles", 
   "dygraphs", "shinyjqui", "highcharter", "tidyquant", "reshape2", "shinyBS", "tseries",
-  "Matrix", "matrixcalc", "corrplot")
+  "Matrix", "matrixcalc", "corrplot", "htmltab")
 
 
 ## install "bubbles" package from github (https://github.com/jcheng5/bubbles)
