@@ -45,3 +45,6 @@ install.packages(missingPkgs)
 This app is calculation intensive, it is recommended to run locally as shown above, because it might freeze a little bit if multiple users are using it at the same time on shinyapps.io.
  
  All comments, suggestions and ideas are welcomed.
+ 
+## **Update**
+Morningstar doesnot provide Financial Statements information anymore, so the financial statements report will not work.
