@@ -100,7 +100,7 @@ output$vbx_dji <-
                   style = "display:none"),
         div(
           tags$span(
-            style = "display: inline-block;width:67%;word-wrap: break-word;",
+            style = "display: inline-block;width:60%;word-wrap: break-word;",
             tags$span(RVs$Indxdta$Name[4]),
             tags$br(),
             tags$span(RVs$Indxdta$`Trade Time`[4], style = "font-size:80%")
