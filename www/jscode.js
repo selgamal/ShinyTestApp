@@ -1,3 +1,8 @@
+shinyBS.inputBindings.modal.initialize = function(el) {
+    $($(el).attr("data-sbs-trigger")).attr({"data-toggle": "modal", "data-target": $(el).attr("id")});
+  };
+
+
 var alert1;
 $(document).on("click", "#alert1", function() {
     alert1 = Math.random();

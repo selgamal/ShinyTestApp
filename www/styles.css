@@ -1,7 +1,7 @@
 
 /* General page styles */
 
-
+#play-controls {position:inherit !important;}
 
 body > div.wrapper {
   display:none;
@@ -702,10 +702,11 @@ body > nav > div > div.navbar-header > button {
 
 /*
 #play-controls {
+  position: ''!important;
   background-color: #F0F0F0;
   max-width: 100% !important;
-}
-*/
+}*/
+
 
 #SpltHistory, #DivHistory {
   height:114px;

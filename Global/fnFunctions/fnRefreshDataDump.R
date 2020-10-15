@@ -19,7 +19,6 @@ fnRefresh <-
     source("Global/fnFunctions/fnGetRTDataDump.R", local = T)$value
     source("Global/fnFunctions/GetIntradayGoogleDump.R", local = T)$value
     
-    
     rdata <- rdata[rdata$Name != "N/A", ]
     
     #ignore this, random numbers for testing when market is closed
@@ -124,9 +123,11 @@ fnRefresh <-
     
     bblz <- bblz[with(bblz, order(-LastSizeNum,-abs(changeNum1))), ]
     
-    tz1 <- gsub("\\^GSPC", ".INX", Indexes)
-    tz1 <- gsub("\\^IXIC", ".IXIC", tz1)
-    tz1 <- gsub("\\^DJI", ".DJI", tz1)
+    # tz1 <- gsub("\\^GSPC", ".INX", Indexes)
+    # tz1 <- gsub("\\^IXIC", ".IXIC", tz1)
+    # tz1 <- gsub("\\^DJI", ".DJI", tz1)
+    
+    tz1 <- Indexes
     
     tz <- c(tz1, fn_sessionGnrLsrNames)
     BxIntraDta <- mapply(
@@ -154,9 +155,9 @@ fnRefresh <-
       SIMPLIFY = F
     )
     
-    names(BxIntraDta) <- gsub(".INX", "\\^GSPC", names(BxIntraDta))
-    names(BxIntraDta) <- gsub(".IXIC", "\\^IXIC", names(BxIntraDta))
-    names(BxIntraDta) <- gsub(".DJI", "\\^DJI", names(BxIntraDta))
+    # names(BxIntraDta) <- gsub(".INX", "\\^GSPC", names(BxIntraDta))
+    # names(BxIntraDta) <- gsub(".IXIC", "\\^IXIC", names(BxIntraDta))
+    # names(BxIntraDta) <- gsub(".DJI", "\\^DJI", names(BxIntraDta))
     
     return(
       list(

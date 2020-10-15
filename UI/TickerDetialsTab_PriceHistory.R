@@ -314,7 +314,7 @@ tags$div(
             column(
               width = 6, style = "font-size:120%;",
               div(id = "preformanceChart_container", 
-                  style = "border-radius:6px;background-color:#F0F0F0;",
+                  style = "border-radius:6px;border: 1px solid #F0F0F0;",
                   plotOutput(outputId = "PerformanceChart", height = "410px"),
                   plotOutput(outputId = "PerformanceChartLegend", height = "30px")
               )

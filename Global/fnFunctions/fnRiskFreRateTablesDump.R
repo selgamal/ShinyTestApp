@@ -55,9 +55,9 @@ fnRiskFreRateTables <-
     
     YC_update$Date <- YCDates
     
-    YC_update <- YC_update[, c(12, 1:11)]
+    YC_update <- YC_update[, c(ncol(YC_update), 1:(ncol(YC_update)-1))]
     
-    
+  
     names(YC_update)[-1] <-
       ifelse(grepl(" mo", names(YC_update)[-1]),
              gsub(" mo", "M", names(YC_update)[-1]),
@@ -69,9 +69,10 @@ fnRiskFreRateTables <-
     
     
     # Bind update date to history
+    YC_update_ <- YC_update[,names(x)]
     
     YC_tbl <-
-      rbind.data.frame(YCHistory, YC_update, make.row.names = F)
+      rbind.data.frame(YCHistory, YC_update_, make.row.names = F)
     
     if (missing(from)) {
       f <- min(YC_tbl$Date)

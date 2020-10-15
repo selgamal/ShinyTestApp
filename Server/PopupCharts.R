@@ -39,14 +39,15 @@ observeEvent({
   
   RVs$slctdbxsymIntra <- switch(
     RVs$slctdbxsym
-    , "^GSPC" = ".INX"
-    , "^IXIC" = ".IXIC"
-    , "^DJI" = ".DJI"
+    , "^GSPC" = "^GSPC"
+    , "^IXIC" = "^IXIC"
+    , "^DJI" = "^DJI"
     , RVs$slctdbxsym
   
   )
   
   # Get intra day data for the the intraday chart
+  # browser()
    RVs$slctd_symb_intraday <- tryCatch(GetIntradayGoogle( RVs$slctdbxsymIntra), error = function(e) xts())
 
   

@@ -932,7 +932,7 @@ output$PerformanceChart <- renderPlot({
   showElement("betadiv")
   showElement("sharperatio")
   plot.new()
-  par(bg = NA, mgp = c(2,.5,0),mar = c(0,0,0,0), mai = c(0,0,0.5,0))
+  par( mgp = c(2,.5,0),mar = c(0,0,0,0), mai = c(0,0,0.5,0))
   charts.PerformanceSummary(RVs$TkrBenchmarkReturns
                             , colorset= chartColors
                             , lwd=2
@@ -958,7 +958,7 @@ output$PerformanceChartLegend <- renderPlot({
   req(length(RVs$TkrBenchmarkReturns)>0)
   a <- names(RVs$TkrBenchmarkReturns)[1]
   b <- names(RVs$TkrBenchmarkReturns)[2]
-  par(mar=c(0,0,0,0), bg = "#F0F0F0")
+  par(mar=c(0,0,0,0))
   plot.new()
   legend("bottom",
          legend = c(a, b),

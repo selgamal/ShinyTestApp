@@ -416,6 +416,11 @@ server <- function(input, output, session) {
       }, x = z$Symbol, USE.NAMES = F)
     
     RVs$dtable <- z
+    toggleModal(
+      session = session,
+      modalId = "detailstable",
+      toggle = "open"
+    )
   })
   
   observeEvent(input$refreshTable, {

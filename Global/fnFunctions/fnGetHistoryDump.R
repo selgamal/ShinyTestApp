@@ -95,7 +95,7 @@ fnGetHistory <-
             } else {
               fs_tkr %>%
                 select(type , annual) %>%
-                unnest()
+                unnest(c(type , annual))
             }
           
           FS_qr <-
@@ -104,7 +104,7 @@ fnGetHistory <-
             } else {
               fs_tkr %>%
                 select(type , quarter) %>%
-                unnest()
+                unnest(c(type , quarter))
             }
           
           FS_yr$Period <-

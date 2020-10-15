@@ -312,7 +312,6 @@ output$port_SectionTwo_PerformanceChart <- renderPlot({
   
   plot.new()
   par(
-    bg = NA,
     mgp = c(2, .5, 0),
     mar = c(0, 0, 0, 0),
     mai = c(0, 0, 0, 0)
@@ -348,7 +347,7 @@ output$port_SectionTwo_PerformanceChartLegend <- renderPlot({
   req(length(RVs$port_SectionTwo_perf_PortBenchmarkReturns) > 0)
   a <-
     names(RVs$port_SectionTwo_perf_PortBenchmarkReturns[, c(as.numeric(input$port_sectionTwo_PerfSum_slct), 4)])
-  par(mar = c(0, 0, 0, 0), bg = NA)
+  par(mar = c(0, 0, 0, 0))
   plot.new()
   legend(
     "bottom",

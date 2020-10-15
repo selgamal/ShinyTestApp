@@ -145,7 +145,7 @@ fluidRow(
               selected = 1,
               inline = T
             ),
-            style = "border-radius:6px;background-color:#F0F0F0;",
+            style = "border-radius:6px;border: 1px solid #F0F0F0;",
             plotOutput(outputId = "port_SectionTwo_PerformanceChart", height = "410px"),
             plotOutput(outputId = "port_SectionTwo_PerformanceChartLegend", height = "30px")
           )

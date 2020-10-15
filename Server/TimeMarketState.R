@@ -2,10 +2,10 @@
 ###__ Get market open/closed text from yahoo finance home page and attach it to Sys.time() string and store in rv####
 
 observeEvent(trgr60(), {
-  statmsg <- tryCatch(read_html("http://www.msn.com/en-us/money/markets"), error = function(e) NA)
+  statmsg <- tryCatch(read_html("https://finance.yahoo.com/"), error = function(e) NA)
   if(!all(is.na(statmsg))) { 
     statmsg <- statmsg %>%
-      html_nodes('.market-status-text') %>% 
+      html_nodes(xpath ='//span[@data-id="mk-msg"]') %>% 
       html_text()
     if (!length(statmsg)) {statmsg <-"Market Stats Not Available"}
   } else {statmsg <- "Market Stats Not Available"}

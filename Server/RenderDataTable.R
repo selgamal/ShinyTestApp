@@ -9,6 +9,7 @@ drCallback <-
 
 # Render Data Table ####
 
+
 output$rttable <- DT::renderDataTable({
   DT::datatable(
     RVs$dtable[, c(1:4, 14, 22, 6:7, 8, 23, 9, 24, 10, 11, 19:20, 26:30, 33,34)]
