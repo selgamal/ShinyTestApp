@@ -4,7 +4,7 @@ wellPanel(
   width = 1
   
   ,
-  div(id = "hidesidebar", icon("caret-square-o-left")),
+  div(id = "hidesidebar", icon("caret-square-o-left", verify_fa=FALSE)),
   selectizeInput(
     label = tagList(tags$label("Select Ticker Symbols", style = "margin-bottom:0;"), HTML("&nbsp;"),
                     if(UsePreLoadedTkrData) {

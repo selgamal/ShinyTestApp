@@ -91,7 +91,7 @@ observeEvent(
         updateActionButton(
           session = session,
           inputId = "port_sectionTwo_specs_doAction",
-          icon = icon("floppy-o"),
+          icon = icon("floppy-o", verify_fa=FALSE),
           label = "Save"
         )
       },

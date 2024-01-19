@@ -220,7 +220,7 @@ fluidRow(
           actionButton(
             inputId = "port_sectionTwo_specs_doAction",
             label = "Save",
-            icon = icon("floppy-o")
+            icon = icon("floppy-o", verify_fa=FALSE)
           )
           
         ),
